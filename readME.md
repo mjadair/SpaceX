@@ -16,10 +16,16 @@ Then, to install dependencies navigate to the repository in the terminal and run
 npm install
 ```
 
-Finally, to run the project on Port 8000 run:
+To run the project on Port 8000 run:
 
 ```
 npm run serve
+```
+
+Finally, when your browser opens, please navigate to:
+
+```
+http://localhost:8000/SpaceX/
 ```
 
 

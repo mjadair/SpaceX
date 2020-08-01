@@ -32,9 +32,6 @@ const DragonModal: React.FC<DragonModalProps> = (props) => {
             <p className="title">{props.dragon.name}</p>
             <p className="subtitle"></p>
           </article>
-          <article className="tile is-child notification">
-            <p className="subtitle">Bot</p>
-          </article>
         </div>
         <div className="tile is-parent">
           <article className="tile is-child notification">

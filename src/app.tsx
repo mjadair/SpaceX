@@ -4,7 +4,8 @@ import axios from 'axios'
 import './style.scss'
 import 'bulma'
 
-const spaceXLogo: string = './assets/spacex-logo.jpg'
+// Commenting the below out and replacing with an external link as it didn't work on deployment
+// const spaceXLogo: string = './assets/spacex-logo.jpg'
 
 // Interfaces
 import Rocket from './Interfaces/Rocket'
@@ -48,7 +49,7 @@ const App: React.FC = () => {
 
   return <div data-test="component-app">
     <div className="toggle-container">
-      <img src={spaceXLogo} className="space-x-logo"  alt="space x logo"/>
+      <img src="https://www.metri-tech.com/wp-content/uploads/2017/01/spacex-logo.jpg" className="space-x-logo"  alt="space x logo"/>
       <span className="logo-and-toggle">
         <h2>Toggle to see {toggle ? 'Dragons 🛰  ' : 'Rockets 🚀 '}</h2>
         <Toggle id="toggle" checked={toggle} onToggle={() => setToggle(!toggle)} />

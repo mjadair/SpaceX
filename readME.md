@@ -1,9 +1,9 @@
-#SpaceX
+# SpaceX
 
 Thanks for having a look! 😊
 
 
-###To Run Locally:
+### To Run Locally:
 To install the project locally, please run the following in your terminal:
 
 ```

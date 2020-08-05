@@ -16,5 +16,4 @@ export default interface Dragon  {
     lb: number
 
   }
-
 }

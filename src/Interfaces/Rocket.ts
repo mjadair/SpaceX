@@ -17,7 +17,6 @@ export default interface Rocket  {
     kg: number,
     lb: number
   }
-
 }
 
 

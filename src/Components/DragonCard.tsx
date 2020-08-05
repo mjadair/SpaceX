@@ -1,7 +1,6 @@
 import React from 'react'
 import Dragon from '../Interfaces/Dragon'
 
-
 interface DragonCardProps {
   dragons: {
     name: string,
@@ -12,10 +11,10 @@ interface DragonCardProps {
   toggleModal: Function
 }
 
-
 const DragonCard: React.FC<DragonCardProps> = (props) => {
 
-  return <>
+  return (
+  <>
     {props.dragons.map((dragon: Dragon, index: number) => {
       return <div key={index} className="column is-half slide-in-right" onClick={() => props.toggleModal(dragon)}>
         <h1 className="spacex-title">{dragon.name}</h1>
@@ -24,11 +23,10 @@ const DragonCard: React.FC<DragonCardProps> = (props) => {
             <img src={dragon.flickr_images[0]} alt={`${dragon.name} dragon`}></img>
           </figure>
         </div>
-        <div className="card-content">
-
-        </div>
       </div>
     })}
   </>
+  )
 }
+
 export default DragonCard

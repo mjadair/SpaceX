@@ -26,8 +26,8 @@ interface RocketModalProps {
 
 const RocketModal: React.FC<RocketModalProps> = (props) => {
 
-
-  return <div className="tile is-ancestor">
+  return (
+  <div className="tile is-ancestor">
     <div className="tile is-vertical is-8">
       <div className="tile">
         <div className="tile is-parent is-vertical">
@@ -61,11 +61,9 @@ const RocketModal: React.FC<RocketModalProps> = (props) => {
           <p className="title">Quick Facts</p>
           <div className="content">
             <ul>
-
               <li>Height (m): {props.rocket.height.meters}</li>
               <li>Diameter (m): {props.rocket.diameter.meters}</li>
               <li>Mass (kg): {props.rocket.mass.kg}</li>
-
             </ul>
             <a href={props.rocket.wikipedia} target="_blank" className="subtitle" id="link">See more on Wikipedia</a>
           </div>
@@ -73,10 +71,8 @@ const RocketModal: React.FC<RocketModalProps> = (props) => {
       </article>
     </div>
   </div>
-
-
+  )
 }
-
 
 export default RocketModal
 

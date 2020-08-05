@@ -47,7 +47,8 @@ const App: React.FC = () => {
     setDetailView(spaceCraft)
   }
 
-  return <div data-test="component-app">
+  return (
+  <div data-test="component-app">
     <div className="toggle-container">
       <img src="https://www.metri-tech.com/wp-content/uploads/2017/01/spacex-logo.jpg" className="space-x-logo"  alt="space x logo"/>
       <span className="logo-and-toggle">
@@ -85,6 +86,7 @@ const App: React.FC = () => {
 
 
   </div>
+  )
 }
 
 ReactDOM.render(

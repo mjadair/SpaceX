@@ -1,7 +1,5 @@
 import React from 'react'
 import Rocket from '../Interfaces/Rocket'
-import Dragon from '../Interfaces/Dragon'
-
 
 interface RocketCardProps {
   rockets: { rocket_name: string,
@@ -11,9 +9,9 @@ interface RocketCardProps {
     toggleModal: Function
 }
 
-
 const RocketCard: React.FC<RocketCardProps> = (props) => {
-  return <>
+  return (
+  <>
     {props.rockets.map((rocket: Rocket, index: number) => {
       return <div key={index} className="column is-one-half-desktop is-half-tablet slide-in-left" onClick={() => props.toggleModal(rocket)}>
         <h1 className="spacex-title">{rocket.rocket_name}</h1>
@@ -22,12 +20,10 @@ const RocketCard: React.FC<RocketCardProps> = (props) => {
             <img src={rocket.flickr_images[0]} alt={`${rocket.rocket_name} rocket`} />
           </figure>
         </div>
-        <div className="card-content">
-        
-        </div>
       </div>
     })}
   </>
+  )
 }
 export default RocketCard
 

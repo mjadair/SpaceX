@@ -16,15 +16,14 @@ interface DragonModalProps {
     return_payload_mass: {
       kg: number,
       lb: number
-
     }
-
   }
 }
 
 const DragonModal: React.FC<DragonModalProps> = (props) => {
 
-  return <div className="tile is-ancestor">
+  return (
+  <div className="tile is-ancestor">
     <div className="tile is-vertical is-8">
       <div className="tile">
         <div className="tile is-parent is-vertical">
@@ -65,7 +64,7 @@ const DragonModal: React.FC<DragonModalProps> = (props) => {
       </article>
     </div>
   </div>
+  )
 }
-
 
 export default DragonModal

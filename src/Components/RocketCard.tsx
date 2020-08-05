@@ -2,12 +2,11 @@ import React from 'react'
 import Rocket from '../Interfaces/Rocket'
 
 interface RocketCardProps {
-  rockets: { rocket_name: string,
-    description: string,
-    flickr_images: string[] }[]
+  rockets: Rocket[],
     modal: boolean,
     toggleModal: Function
 }
+
 
 const RocketCard: React.FC<RocketCardProps> = (props) => {
   return (
